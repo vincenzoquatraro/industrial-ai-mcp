@@ -25,8 +25,14 @@ jobs:
           pip install -r requirements.txt
 
       - name: Esegui test (senza database/servizi esterni)
+        env:
+          DATABASE_URL: "postgresql+psycopg://user:pass@localhost:5432/testdb"
+          WEATHER_BASE_URL: "https://wttr.in"
+          WEATHER_TIMEOUT: "10"
+          LOG_LEVEL: "INFO"
+          GEMINI_API_KEY: "fake-key-for-ci"
         run: python -m tests.test_machine_service
-
+              
   build:
     runs-on: ubuntu-latest
     needs: test
