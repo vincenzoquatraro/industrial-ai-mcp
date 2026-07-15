@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "industrial_ai_mcp"
+    static_configs:
+      - targets: ["industrial_ai_mcp_server:9100"]

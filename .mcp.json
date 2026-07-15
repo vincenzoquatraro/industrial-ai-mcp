@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "industrial_ai_assistant": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm",
+        "--name", "industrial_ai_mcp_server",
+        "--network", "progetto_mcp_produzione_default",
+        "--env-file", "C:\\Users\\vincenzo.quatraro\\Desktop\\progetto_MCP_PRODUZIONE\\.env.docker",
+        "industrial-ai-mcp"
+      ]
+    }
+  }
+}

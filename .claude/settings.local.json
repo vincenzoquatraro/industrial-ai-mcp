@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__industrial_ai_assistant__get_machine_status",
+      "mcp__industrial_ai_assistant__analyze_machine_health",
+      "mcp__industrial_ai_assistant__get_weather"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "industrial_ai_assistant"
+  ]
+}

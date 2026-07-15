@@ -1,0 +1,2 @@
+Remove-Item Env:NODE_EXTRA_CA_CERTS
+claude
